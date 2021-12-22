@@ -1,0 +1,66 @@
+/* GENMERALS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* UTILIES */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* MAIN */
+
+main {
+    background-color: #000;
+}
+
+/* MOVIE CARD */
+
+.movie-card {
+    width: 350px;
+    margin: 1.25rem;
+    padding: 1rem 1rem 1.5rem;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.movie-card .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.movie-card ul {
+    list-style: none;
+    cursor: default;
+}
+
+.poster {
+    height: 300px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(0.15);
+    transition: filter 0.3s;
+}
+
+.poster:hover img {
+    filter: grayscale(0);
+}
